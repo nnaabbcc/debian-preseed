@@ -431,4 +431,5 @@ d-i debian-installer/exit/poweroff boolean true
 # directly, or use the apt-install and in-target commands to easily install
 # packages and run commands in the target system.
 #d-i preseed/late_command string apt-install zsh; in-target chsh -s /bin/zsh
+d-i preseed/late_command string in-target git clone https://github.com/nnaabbcc/debian-preseed.git /home/user/debian-preseed
 
