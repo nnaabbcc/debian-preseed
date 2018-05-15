@@ -7,7 +7,7 @@ sudo usermod -a -G vboxsf user
 sudo bash -c 'echo "10.1.3.171      git.new-rt.com" >> /etc/hosts'
 
 # install boost
-sudo aptitude install libboost1.62-all-dev
+sudo aptitude -y install libboost1.62-all-dev
 
 # install google test
 sudo aptitude -y install googletest
