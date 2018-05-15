@@ -1,10 +1,10 @@
 
 echo 123456 | sudo -S mount /dev/sr0 /media/cdrom0
 sudo bash /media/cdrom0/autorun.sh
-usermod -a -G vboxsf user
+sudo usermod -a -G vboxsf user
 
 # add gitlab server hostname
-echo "10.1.3.171      git.new-rt.com" >> /etc/hosts
+sudo bash -c 'echo "10.1.3.171      git.new-rt.com" >> /etc/hosts'
 
 # install boost
 sudo aptitude install libboost1.62-all-dev
