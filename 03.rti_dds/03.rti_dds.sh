@@ -12,7 +12,7 @@ fi
 
 rm -rf tmp
 mkdir tmp
-tar xvf rti_connext_dds_secure-5.3.0-eval-x64Linux3gcc5.4.0.tar.gz -C tmp
+tar xvf $dds_file -C tmp
 echo 123456 | sudo -S expect dds.expect
 export NDDSHOME=/opt/rti_connext_dds-5.3.0
 sudo cp rti_license.dat $NDDSHOME

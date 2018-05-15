@@ -3,8 +3,6 @@ echo 123456 | sudo -S mount /dev/sr0 /media/cdrom0
 sudo bash /media/cdrom0/autorun.sh
 sudo usermod -a -G vboxsf user
 
-sudo hostname -b debian
-
 # add gitlab server hostname
 sudo bash -c 'echo "10.1.3.171      git.new-rt.com" >> /etc/hosts'
 
