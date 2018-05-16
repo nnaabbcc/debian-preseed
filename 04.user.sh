@@ -1,3 +1,5 @@
+# Generate ssh key
+echo | ssh-keygen
 
 # install visual studio code extensions
 code --install-extension ms-vscode.cpptools
